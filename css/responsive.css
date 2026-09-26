@@ -1,0 +1,313 @@
+/* ========================================
+   NEXA LIVING
+   RESPONSIVE
+======================================== */
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1024px) {
+
+    :root {
+
+        --container-padding: 24px;
+
+    }
+
+
+    .navbar {
+
+        min-height: 80px;
+
+    }
+
+
+    .navbar-logo img {
+
+        width: 135px;
+
+    }
+
+
+    .nav-links {
+
+        gap: 20px;
+
+    }
+
+
+    .nav-links a {
+
+        font-size: 14px;
+
+    }
+
+
+    .nav-cta {
+
+        padding-inline: 16px;
+
+        font-size: 13px;
+
+    }
+
+
+    .hero {
+
+        min-height: auto;
+
+        padding-block: 80px;
+
+    }
+
+
+    .hero-container {
+
+        gap: 48px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: clamp(
+            42px,
+            5vw,
+            60px
+        );
+
+    }
+
+
+    .hero-description {
+
+        font-size: 17px;
+
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+    :root {
+
+        --container-padding: 20px;
+
+    }
+
+
+    .site-header {
+
+        background: var(--color-background);
+
+    }
+
+
+    .navbar {
+
+        min-height: 72px;
+        position: relative;
+        justify-content: space-between;
+
+    }
+
+
+    .navbar-logo img {
+
+        width: 125px;
+
+    }
+
+
+    .nav-links,
+    .nav-cta {
+
+        display: none;
+
+    }
+
+
+    .menu-toggle {
+
+        display: flex;
+
+    }
+
+
+    .hero {
+
+        padding-block: 56px 64px;
+
+    }
+
+
+    .hero-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 48px;
+
+    }
+
+
+    .hero-content {
+
+        max-width: none;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: clamp(
+            42px,
+            11vw,
+            58px
+        );
+
+        line-height: 1;
+
+    }
+
+
+    .hero-description {
+
+        margin-top: var(--space-lg);
+
+        font-size: 16px;
+
+        line-height: 1.65;
+
+    }
+
+
+    .hero-actions {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        margin-top: var(--space-lg);
+
+    }
+
+
+    .button {
+
+        width: 100%;
+
+    }
+
+
+    .hero-image-wrapper {
+
+        aspect-ratio: 4 / 3;
+
+        border-radius: var(--radius-md);
+
+    }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+
+    .hero {
+
+        padding-block: 48px 56px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .hero-eyebrow {
+
+        font-size: 12px;
+
+    }
+
+
+    .hero-image-wrapper {
+
+        aspect-ratio: 1 / 1;
+
+    }
+
+}
+
+    .nav-links.is-open {
+
+        position: absolute;
+
+        top: 72px;
+        left: 0;
+        right: 0;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        padding: 16px 20px 24px;
+
+        background: var(--color-background);
+
+        border-bottom: 1px solid
+            color-mix(
+                in srgb,
+                var(--color-text) 10%,
+                transparent
+            );
+
+    }
+
+
+    .nav-links.is-open a {
+
+        padding: 14px 0;
+
+    }
+
+    @media (max-width: 768px) {
+
+    .menu-toggle.is-open span:nth-child(1) {
+
+        transform: translateY(7px) rotate(45deg);
+
+    }
+
+
+    .menu-toggle.is-open span:nth-child(2) {
+
+        opacity: 0;
+
+    }
+
+
+    .menu-toggle.is-open span:nth-child(3) {
+
+        transform: translateY(-7px) rotate(-45deg);
+
+    }
+
+}
